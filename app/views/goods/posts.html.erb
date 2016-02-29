@@ -1,0 +1,17 @@
+<h4><a  href="#">L.B.D</a> || <a href="#">Louis Vuitton</a> | <a href="#">Hermes</a> | <a href="#">Gucci</a> | <a href="#">Prada</a></h4>
+
+<div>
+  <h2>Luxury Brand Data 사이트에 오신 여러분들을 환영합니다.</h2>
+  <p>여러분들만 알고 있는 최고의 Brand, 최고의 제품을 알려주세요!</p>
+</div>
+
+<hr>
+
+<% @posts.reverse.each do |post| %>
+<div style="border: 1px solid #ffffff">
+  <h4><%= post.title %></h4>
+  <p style="color: #ff0000"><%= post.category %></p>
+  <p>작성자 아이디</p>
+  <p><%= post.content %></p>
+</div>
+<% end %>
